@@ -1,0 +1,156 @@
+
+.face-treatments{
+    position: relative;
+    margin-top: 100px;
+    .heading{
+        text-align: center;
+        padding: 50px 0 50px 0;
+        h1{
+            display: inline-block;
+            color: green;
+            font-size: $h1FontSizeHeading;
+            border-bottom: 2px solid green;
+            padding-bottom:5px ;
+        }
+    }
+    /* BOX MODEL FOR EVERYTHING UNTIL SMINKANJE*/
+    .model-box{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        transition: all .6s;
+        
+        h3{
+            text-align: center;
+            font-size: $h3FontSize;
+        }
+        p{
+            padding: 20px 40px;
+            text-align: center;
+            font-size: $pFontSizeTreatments;
+            font-style: italic;
+            line-height: 1.7;
+        }
+        h4{
+            text-align: center;
+            font-size: $h4FontSize;
+        }
+        h5{/* BUTTON FOR DESCRIPTION*/
+            position: absolute;
+            top: 74%;
+            left: 25%;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            font-size: 24px;
+            padding: 10px;
+            background-color:#97b1bd;
+            border: 2px solid white;
+            width: 100px;
+            height: 52px;
+            border-radius: 20px;
+            transition: all .6s;
+            &:hover{
+                @include btnHover;
+
+            }
+            
+
+        }
+        .description{ /*DESCRIPTION WINDOW*/
+            padding: 20px 10px;
+            position: relative;
+            background-color: #97b1bd ;
+            button{/*CLOSE BUTTON*/
+                position: absolute;
+                font-size: 50px;
+                top: 5%;
+                left: 90%;
+                transform: translate(-50%, -20%);
+                color: white;
+                background: none;
+                outline: none;
+                border: none;
+            }
+            p{
+                margin-top: 40px;
+                color: white;
+                line-height: 1.7;
+            }
+        }
+        
+        .price{/*PRICE CLASS FOR PRICE BUTTONS*/
+            position: absolute;
+            top: 74%;
+            left: 59%;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            background-color:#97b1bd;
+            border: 2px solid white;
+            border-radius: 20px;
+            transition: all .6s;
+            &:hover{
+                @include btnHover;
+            }
+        }
+        .price-two{/*PRICE BUTTON FOR V CARBON*/
+            color: white;
+            position: absolute;
+            top: 87%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .6s;
+            width: 100px;
+            height: 50px;
+            &:hover{
+                @include btnHover;
+            }
+        }
+        &:hover{
+            transform: scale(1.05);
+            transform: translateY(10px);
+            background: #97b1bd;
+            color: white;
+            box-shadow: -1px 3px 3px 3px rgb(202, 186, 186);
+        }
+    }
+    .makeup-box{/*BOX MODEL FOR SMIKANJE UNTIL END OF FACE TREATMENTS*/
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        transition: all .6s;
+        h3{
+            text-align: center;
+            font-size: $h3FontSize;
+        }
+        p{
+            padding: 20px 40px;
+            text-align: center;
+            font-size: $pFontSizeTreatments;
+            line-height: 1.7;
+            font-style: italic;
+        }
+        h4{
+            margin-top: -20px;
+            text-align: center;
+            font-size: $h4FontSize;
+        }
+        &:hover{
+            transform: scale(1.05);
+            transform: translateY(10px);
+            background: #97b1bd;
+            color: white;
+            box-shadow: -1px 3px 3px 3px rgb(202, 186, 186);
+        }
+    }
+    .hide{ /*CLASS USED FOR HIDING ELEMENTS IN JAVASCRIPT*/
+        display: none;
+    }
+    .hidden{/*CLASS USED FOR HIDING ELEMENTS IN JAVASCRIPT*/
+        opacity: 0;
+    }
+}

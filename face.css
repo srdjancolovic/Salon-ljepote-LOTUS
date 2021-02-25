@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.navbar {
+  background: #97b1bd;
+}
+
+.navbar .navbar-brand {
+  padding-left: 50px;
+}
+
+.navbar .navbar-brand img {
+  width: 90px;
+}
+
+.navbar .navbar-nav {
+  text-align: center;
+}
+
+.navbar .navbar-nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 40px;
+}
+
+.navbar .navbar-nav li a {
+  color: white;
+  font-size: 17px;
+  letter-spacing: 2px;
+  padding: 15px;
+  position: relative;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.navbar .navbar-nav li a::after {
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+
+.navbar .navbar-nav li a::before {
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.navbar .navbar-nav li a:hover {
+  color: black;
+  z-index: 1;
+}
+
+.navbar .navbar-nav li a:hover::after {
+  z-index: -10;
+  -webkit-animation: fill .6s forwards;
+          animation: fill .6s forwards;
+  opacity: 1;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+  }
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+  }
+}
+/*# sourceMappingURL=face.css.map */

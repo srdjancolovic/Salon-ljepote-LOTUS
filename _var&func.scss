@@ -1,0 +1,32 @@
+$pFontSizeDesc: 20px;
+$pFontSizeDesc576: 18px;
+$h1FontSizeContact: 35px;
+$h1FontSizeContact576: 30px;
+$h2FontSizeContact: 28px;
+$h2FontSizeContact576: 25px;
+$pFontSizeContact: 18px;
+$pFontSizeContact576: 16px;
+$h1FontSizeHeading:38px;
+$h1FontSizeHeading576:29px;
+$h3FontSize:28px;
+$h3FontSize576:23px;
+$pFontSizeTreatments:19px;
+$pFontSizeTreatments576:17px;
+$h4FontSize:24px;
+$h4FontSize576:21px;
+@mixin adressAndTime{
+    h2{
+        font-size: $h2FontSizeContact;
+        letter-spacing: 2px;
+    }
+    p{
+        padding-top: 15px;
+        font-size: $pFontSizeContact;
+        letter-spacing: 1px;
+    }
+}
+@mixin btnHover {
+    background-color:rgb(84, 199, 84);
+    color: white;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,894 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #97b1bd;
+}
+
+.navbar .navbar-brand {
+  padding-left: 50px;
+}
+
+.navbar .navbar-brand img {
+  width: 90px;
+}
+
+.navbar .navbar-nav {
+  text-align: center;
+}
+
+.navbar .navbar-nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 40px;
+}
+
+.navbar .navbar-nav li a {
+  color: white;
+  font-size: 17px;
+  letter-spacing: 2px;
+  padding: 15px;
+  position: relative;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.navbar .navbar-nav li a::after {
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+
+.navbar .navbar-nav li a::before {
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.navbar .navbar-nav li a:hover {
+  color: black;
+  z-index: 1;
+}
+
+.navbar .navbar-nav li a:hover::after {
+  z-index: -10;
+  -webkit-animation: fill .6s forwards;
+          animation: fill .6s forwards;
+  opacity: 1;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+  }
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+  }
+}
+
+.landing-page {
+  background-color: #97b1bd;
+  padding-top: 150px;
+}
+
+.landing-page .picture img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+.landing-page .description {
+  position: relative;
+  padding: 70px 40px 0 40px;
+}
+
+.landing-page .description h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.landing-page .description p {
+  font-weight: lighter;
+  color: white;
+  padding-top: 50px;
+  text-align: justify;
+  padding-right: 30px;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.landing-page .description .cta-btn {
+  padding-top: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.landing-page .description .cta-btn h3 {
+  background-color: white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.landing-page .description .cta-btn h3:hover {
+  background-color: #54c754;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.landing-page .description .cta-btn .hide {
+  display: none;
+}
+
+.landing-page .description .promotions {
+  margin-top: -70px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.landing-page .description .promotions p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.landing-page .description .promotions p span {
+  font-weight: bold;
+}
+
+.landing-page .description .promotions .promotion-btn {
+  padding-top: 35px;
+  text-align: center;
+}
+
+.landing-page .description .promotions .promotion-btn h4 {
+  background-color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.landing-page .description .promotions .promotion-btn h4:hover {
+  background-color: #54c754;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.landing-page .description .promotions .promotion-btn .hide {
+  display: none;
+}
+
+.landing-page .description .hide {
+  display: none;
+}
+
+.contact {
+  background-color: #97b1bd;
+  padding-bottom: 100px;
+  text-align: center;
+  color: white;
+}
+
+.contact::before {
+  content: '';
+  height: 96.83px;
+  margin-top: -96.83px;
+  display: block;
+}
+
+.contact .heading {
+  padding-top: 30px;
+}
+
+.contact .heading h1 {
+  padding-top: 50px;
+  font-size: 35px;
+  color: white;
+}
+
+.contact .contact-info {
+  padding-top: 50px;
+}
+
+.contact .logo-social {
+  display: block;
+}
+
+.contact .logo-social .logo-icon img {
+  width: 140px;
+}
+
+.contact .logo-social .social-links {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.contact .logo-social .social-links {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.contact .logo-social .social-links .svg-inline--fa {
+  color: black;
+  margin-right: 15px;
+  font-size: 30px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.contact .logo-social .social-links .svg-inline--fa:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  color: green;
+}
+
+.contact .adress h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.contact .adress p {
+  padding-top: 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.contact .adress p {
+  color: white;
+}
+
+.contact .time h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.contact .time p {
+  padding-top: 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.contact .time p {
+  color: white;
+}
+
+.signature {
+  background-color: #97b1bd;
+  padding-bottom: 30px;
+}
+
+.signature .copyright {
+  color: #5c7986;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signature .copyright h6 {
+  font-size: 15px;
+}
+
+.signature .copyright p {
+  font-size: 15px;
+}
+
+.face-treatments {
+  position: relative;
+  margin-top: 100px;
+  /* BOX MODEL FOR EVERYTHING UNTIL SMINKANJE*/
+}
+
+.face-treatments .heading {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.face-treatments .heading h1 {
+  display: inline-block;
+  color: green;
+  font-size: 38px;
+  border-bottom: 2px solid green;
+  padding-bottom: 5px;
+}
+
+.face-treatments .model-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.face-treatments .model-box h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.face-treatments .model-box p {
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 19px;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.face-treatments .model-box h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.face-treatments .model-box h5 {
+  /* BUTTON FOR DESCRIPTION*/
+  position: absolute;
+  top: 74%;
+  left: 25%;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  background-color: #97b1bd;
+  border: 2px solid white;
+  width: 100px;
+  height: 52px;
+  border-radius: 20px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.face-treatments .model-box h5:hover {
+  background-color: #54c754;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.face-treatments .model-box .description {
+  /*DESCRIPTION WINDOW*/
+  padding: 20px 10px;
+  position: relative;
+  background-color: #97b1bd;
+}
+
+.face-treatments .model-box .description button {
+  /*CLOSE BUTTON*/
+  position: absolute;
+  font-size: 50px;
+  top: 5%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.face-treatments .model-box .description p {
+  margin-top: 40px;
+  color: white;
+  line-height: 1.7;
+}
+
+.face-treatments .model-box .price {
+  /*PRICE CLASS FOR PRICE BUTTONS*/
+  position: absolute;
+  top: 74%;
+  left: 59%;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  background-color: #97b1bd;
+  border: 2px solid white;
+  border-radius: 20px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.face-treatments .model-box .price:hover {
+  background-color: #54c754;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.face-treatments .model-box .price-two {
+  /*PRICE BUTTON FOR V CARBON*/
+  color: white;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  width: 100px;
+  height: 50px;
+}
+
+.face-treatments .model-box .price-two:hover {
+  background-color: #54c754;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.face-treatments .model-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  background: #97b1bd;
+  color: white;
+  -webkit-box-shadow: -1px 3px 3px 3px #cababa;
+          box-shadow: -1px 3px 3px 3px #cababa;
+}
+
+.face-treatments .makeup-box {
+  /*BOX MODEL FOR SMIKANJE UNTIL END OF FACE TREATMENTS*/
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.face-treatments .makeup-box h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.face-treatments .makeup-box p {
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.face-treatments .makeup-box h4 {
+  margin-top: -20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.face-treatments .makeup-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  background: #97b1bd;
+  color: white;
+  -webkit-box-shadow: -1px 3px 3px 3px #cababa;
+          box-shadow: -1px 3px 3px 3px #cababa;
+}
+
+.face-treatments .hide {
+  /*CLASS USED FOR HIDING ELEMENTS IN JAVASCRIPT*/
+  display: none;
+}
+
+.face-treatments .hidden {
+  /*CLASS USED FOR HIDING ELEMENTS IN JAVASCRIPT*/
+  opacity: 0;
+}
+
+.body-treatments {
+  position: relative;
+  margin-top: 100px;
+}
+
+.body-treatments .heading {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.body-treatments .heading h1 {
+  display: inline-block;
+  color: green;
+  font-size: 38px;
+  border-bottom: 2px solid green;
+  padding-bottom: 5px;
+}
+
+.body-treatments .body-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.body-treatments .body-box h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.body-treatments .body-box p {
+  font-style: italic;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.body-treatments .body-box h4 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.body-treatments .body-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  background: #97b1bd;
+  color: white;
+  -webkit-box-shadow: -1px 3px 3px 3px #cababa;
+          box-shadow: -1px 3px 3px 3px #cababa;
+}
+
+.body-treatments #extra-h4-padding h4 {
+  padding-top: 40px;
+}
+
+.epilacija {
+  position: relative;
+  margin-top: 100px;
+}
+
+.epilacija .heading {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.epilacija .heading h1 {
+  display: inline-block;
+  color: green;
+  font-size: 38px;
+  border-bottom: 2px solid green;
+  padding-bottom: 5px;
+}
+
+.epilacija .heading h3 {
+  font-size: 24px;
+}
+
+.epilacija .epi-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.epilacija .epi-box h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.epilacija .epi-box h4 {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.epilacija .epi-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  background: #97b1bd;
+  color: white;
+  -webkit-box-shadow: -1px 3px 3px 3px #cababa;
+          box-shadow: -1px 3px 3px 3px #cababa;
+}
+
+@media (max-width: 1200px) {
+  /*NAVIGATION*/
+  .navbar .navbar-brand {
+    padding-left: 50px;
+  }
+  button:focus {
+    outline: none;
+  }
+  .navbar-toggler {
+    padding-top: 20px;
+    padding-right: 50px;
+  }
+  /*LANDING PAGE*/
+  .landing-page .description p {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .landing-page .description .promotions h1 {
+    margin-top: 50px;
+    margin-left: 130px;
+  }
+  /*FACE TREATMENTS*/
+  .face-treatments .model-box h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .face-treatments .model-box .price {
+    left: 56%;
+  }
+  .face-treatments .model-box .price-two {
+    left: 51%;
+  }
+  .face-treatments .makeup-box h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  /*BODY TREATMENTS*/
+  .body-treatments .body-box h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  /*EPILACIJA*/
+  .epilacija .epi-box h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-toggler {
+    padding-right: 20px;
+  }
+  .landing-page .description .promotions h1 {
+    margin-left: 0;
+  }
+  /*FACE TREATMENTS*/
+  .face-treatments .model-box h5 {
+    left: 20%;
+  }
+  .face-treatments .model-box .price-two {
+    top: 91%;
+  }
+}
+
+@media (max-width: 768px) {
+  /*NAVBAR TOGGLER*/
+  .navbar-toggler {
+    padding-right: 20px;
+  }
+  /*LANDING PAGE*/
+  .landing-page .description .promotions h1 {
+    margin-left: 0;
+  }
+  /*FACE TREATMENTS*/
+  .face-treatments .model-box {
+    padding-top: 25px;
+  }
+  .face-treatments h5 {
+    text-align: center;
+    margin-left: 65px;
+  }
+  .face-treatments .price {
+    position: fixed;
+    margin-right: 10px;
+  }
+  .face-treatments .price-two {
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 576px) {
+  /*NAVIGATION*/
+  .navbar .navbar-brand {
+    padding-left: 20px;
+  }
+  .navbar .navbar-brand img {
+    width: 75px;
+  }
+  .navbar-toggler {
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+  .navbar-nav li {
+    padding-left: 40px;
+  }
+  /*LANDING PAGE*/
+  .landing-page .description h1 {
+    font-size: 33px;
+  }
+  .landing-page .description p {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  .landing-page .description .promotions h1 {
+    font-size: 33px;
+  }
+  .landing-page .description .promotions p {
+    font-size: 18px;
+  }
+  /*CONTACT*/
+  .contact {
+    padding-top: 50px;
+  }
+  .contact .heading h1 {
+    font-size: 30px;
+  }
+  .contact .logo-social .logo-icon img {
+    width: 110px;
+  }
+  .contact .adress h2 {
+    font-size: 25px;
+  }
+  .contact .adress p {
+    font-size: 16px;
+  }
+  .contact .time h2 {
+    font-size: 25px;
+  }
+  .contact .time p {
+    font-size: 16px;
+  }
+  .signature {
+    padding-bottom: 5px;
+  }
+  .signature .copyright {
+    display: block;
+  }
+  /*FACE TREATMENTS*/
+  .face-treatments .heading {
+    padding: 50px 0 30px 0;
+  }
+  .face-treatments .heading h1 {
+    font-size: 29px;
+  }
+  .face-treatments .model-box {
+    padding-top: 20px;
+  }
+  .face-treatments .model-box h3 {
+    font-size: 23px;
+  }
+  .face-treatments .model-box p {
+    font-size: 17px;
+  }
+  .face-treatments .model-box h4 {
+    font-size: 21px;
+  }
+  .face-treatments .model-box h5 {
+    left: 3%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 50px;
+  }
+  .face-treatments .model-box #price-btn {
+    margin-top: 10px;
+    left: 55%;
+    font-size: 20px;
+    padding: 11px;
+    width: 100px;
+    margin-bottom: 30px;
+  }
+  .face-treatments .model-box .price-two {
+    font-size: 20px;
+    left: 52%;
+  }
+  .face-treatments .model-box .description {
+    padding: 30px 20px 65px 20px;
+  }
+  .face-treatments .makeup-box {
+    padding-top: 20px;
+  }
+  .face-treatments .makeup-box h3 {
+    font-size: 23px;
+  }
+  .face-treatments .makeup-box p {
+    font-size: 17px;
+  }
+  .face-treatments .makeup-box h4 {
+    font-size: 21px;
+  }
+  /*BODY TREATMENTS*/
+  .body-treatments .heading {
+    padding: 50px 0 30px 0;
+  }
+  .body-treatments .heading h1 {
+    font-size: 29px;
+  }
+  .body-treatments .body-box {
+    padding-top: 20px;
+  }
+  .body-treatments .body-box h3 {
+    font-size: 23px;
+  }
+  .body-treatments .body-box p {
+    font-size: 17px;
+  }
+  .body-treatments .body-box h4 {
+    font-size: 21px;
+  }
+  #extra-h4-padding {
+    padding-top: 30px;
+  }
+  /*EPILACIJA*/
+  .epilacija .heading {
+    padding: 50px 0 30px 0;
+  }
+  .epilacija .heading h1 {
+    font-size: 29px;
+  }
+  .epilacija .heading h3 {
+    font-size: 18px;
+  }
+  .epilacija .epi-box {
+    padding-top: 20px;
+  }
+  .epilacija .epi-box h3 {
+    font-size: 23px;
+  }
+  .epilacija .epi-box h4 {
+    padding-top: 25px;
+    font-size: 21px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

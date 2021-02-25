@@ -1,0 +1,322 @@
+@media (max-width: 1200px){
+    /*NAVIGATION*/
+    .navbar{
+        .navbar-brand{
+            padding-left: 50px;
+        }
+        
+    }
+    button{
+        &:focus{
+            outline: none;
+        }
+    }
+    .navbar-toggler{
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+    // .navbar-nav{
+    //     padding-left: 150px;
+    // }
+
+
+    /*LANDING PAGE*/
+    .landing-page{
+        .description{
+            p{
+                padding-right:30px;
+                padding-left:30px;
+            }
+            .promotions{
+                h1{
+                    margin-top: 50px;
+                    margin-left: 130px;
+                }
+            }
+        }
+    }
+    /*FACE TREATMENTS*/
+    .face-treatments{
+        .model-box{
+            h3{
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            .price{
+                left: 56%;
+            }
+            .price-two{
+                left: 51%;
+            }
+        }
+        .makeup-box{
+            h3{
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+    /*BODY TREATMENTS*/
+    .body-treatments{
+        .body-box{
+            h3{
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+    /*EPILACIJA*/
+    .epilacija{
+        .epi-box{
+            h3{
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    
+        .navbar-toggler{
+            padding-right: 20px;
+        }
+    .landing-page{
+        .description{
+            .promotions{
+                h1{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    /*FACE TREATMENTS*/
+    .face-treatments{
+        .model-box{
+            h5{
+                left: 20%;
+            }
+            .price-two{
+                top: 91%;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    /*NAVBAR TOGGLER*/
+    .navbar-toggler{
+        padding-right: 20px;
+    }
+    /*LANDING PAGE*/
+    .landing-page{
+        .description{
+            .promotions{
+                h1{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    /*FACE TREATMENTS*/
+    .face-treatments{
+        .model-box{
+            padding-top: 25px;
+        }
+        h5{
+            text-align: center;
+            margin-left: 65px;
+        }
+        .price{
+            position: fixed;
+           margin-right: 10px;
+        }
+        .price-two{
+            margin-top: -10px;
+            margin-left: -10px;
+        }
+    }
+}
+@media (max-width: 576px){
+    /*NAVIGATION*/
+    .navbar{
+        .navbar-brand{
+            padding-left: 20px;
+            img{
+                width: 75px;
+            }
+        }
+    }
+    .navbar-toggler{
+        padding-top: 20px;
+        padding-right:10px;
+    }
+     .navbar-nav{
+         li{
+             padding-left: 40px;
+         }
+     }
+     /*LANDING PAGE*/
+    .landing-page{
+        .description{
+            h1{
+                font-size: 33px;
+            }
+            p{
+                text-align: center;
+                padding-right: 15px;
+                padding-left: 15px;
+                font-size: $pFontSizeDesc576;
+            }
+            .promotions{
+                h1{
+                    font-size: 33px;
+                }
+                p{
+                    font-size: $pFontSizeDesc576;
+                }
+            }
+        }
+    }
+    /*CONTACT*/
+    .contact{
+        padding-top: 50px;
+        .heading{
+            h1{
+                font-size: $h1FontSizeContact576;
+            }
+        }
+        .logo-social{
+            .logo-icon{
+                img{
+                    width: 110px;
+                }
+            }
+        }
+        .adress{
+            h2{
+                font-size: $h2FontSizeContact576;
+            }
+            p{
+                font-size: $pFontSizeContact576;
+            }
+        }
+        .time{
+            h2{
+                font-size: $h2FontSizeContact576;
+            }
+            p{
+                font-size: $pFontSizeContact576;
+            }
+        }
+        
+    }
+    .signature{
+        padding-bottom: 5px;
+        .copyright{
+            display: block;
+        }
+    }
+    /*FACE TREATMENTS*/
+    .face-treatments{
+        .heading{
+            padding: 50px 0 30px 0;
+            h1{
+                font-size: $h1FontSizeHeading576;
+            }
+        }
+        .model-box{
+            padding-top: 20px;
+            h3{
+                font-size: $h3FontSize576;
+            }
+            p{
+                font-size: $pFontSizeTreatments576;
+            }
+            h4{
+                font-size: $h4FontSize576;
+            }
+            h5{
+                left: 3%;
+                font-size: 20px;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                height: 50px;
+            }
+            #price-btn{
+                margin-top: 10px;
+                left: 55%;
+                font-size: 20px;
+                padding: 11px;
+                width: 100px;
+                margin-bottom: 30px;
+                
+            }
+            .price-two{
+                font-size: 20px;
+                left: 52%;
+            }
+            .description{
+                padding: 30px 20px 65px 20px;
+            }
+            
+        }
+        .makeup-box{
+            padding-top: 20px;
+            h3{
+                font-size: $h3FontSize576;
+            }
+            p{
+                font-size: $pFontSizeTreatments576;
+                
+            }
+            h4{
+                font-size: $h4FontSize576;
+            }
+        }
+    }
+    /*BODY TREATMENTS*/
+    .body-treatments{
+        .heading{
+            padding: 50px 0 30px 0;
+            h1{
+                font-size: $h1FontSizeHeading576;
+            }
+        }
+        .body-box{
+            padding-top: 20px;
+            h3{
+                font-size: $h3FontSize576;
+            }
+            p{
+                font-size: $pFontSizeTreatments576;
+            }
+            h4{
+                font-size: $h4FontSize576;
+            }
+        }
+    }
+    #extra-h4-padding{
+        padding-top: 30px;
+    }
+    /*EPILACIJA*/
+    .epilacija{
+        .heading{
+            padding: 50px 0 30px 0;
+            h1{
+                font-size: $h1FontSizeHeading576;
+            }
+            h3{
+                font-size: 18px;
+            }
+        }
+        .epi-box{
+            padding-top: 20px;
+            h3{
+                font-size: $h3FontSize576;
+            }
+            h4{
+                padding-top: 25px;
+                font-size: $h4FontSize576;
+            }
+        }
+    }
+}
